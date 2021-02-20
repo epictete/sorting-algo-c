@@ -1,6 +1,13 @@
 # Sorting Algorithms in C
 
-These are basic implementations of the most popular sorting algorithms.  
+These are basic implementations of the most popular sorting algorithms. These include :
+
+- Selection Sort
+- Bubble Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
+
 It is written in C.
 
 #### Want to learn more ?
