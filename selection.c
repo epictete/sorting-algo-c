@@ -7,9 +7,8 @@ void SelectionSort(int A[], int n)
         int iMin = i;
 
         for (int j = i+1; j < n; j++)
-        {
-            if (A[j] < A[iMin]) iMin = j;
-        }
+            if (A[j] < A[iMin])
+                iMin = j;
 
         int temp = A[i];
         A[i] = A[iMin];
@@ -24,7 +23,8 @@ int main(void)
 
     SelectionSort(A, n);
 
-    for (int i = 0; i < n; i++) printf("%d ", A[i]);
+    for (int i = 0; i < n; i++)
+        printf("%d ", A[i]);
 
     printf("\n");
 

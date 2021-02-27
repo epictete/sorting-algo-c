@@ -44,9 +44,11 @@ void MergeSort(int A[], int n)
     int nL = sizeof(L) / sizeof(L[0]);
     int nR = sizeof(R) / sizeof(R[0]);
 
-    for (int i = 0; i < mid; i++) L[i] = A[i];
+    for (int i = 0; i < mid; i++)
+        L[i] = A[i];
 
-    for (int i = mid; i < n; i++) R[i-mid] = A[i];
+    for (int i = mid; i < n; i++)
+        R[i-mid] = A[i];
 
     MergeSort(L, nL);
     MergeSort(R, nR);
@@ -60,7 +62,8 @@ int main(void)
 
     MergeSort(A, n);
 
-    for (int i = 0; i < n; i++) printf("%d ", A[i]);
+    for (int i = 0; i < n; i++)
+        printf("%d ", A[i]);
     
     printf("\n");
 

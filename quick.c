@@ -12,7 +12,6 @@ int Partition(int A[], int start, int end)
             int temp = A[i];
             A[i] = A[pIndex];
             A[pIndex] = temp;
-
             pIndex++;
         }
     }
@@ -42,7 +41,8 @@ int main (void)
 
     QuickSort(A, 0, n);
 
-    for (int i = 0; i < n; i++) printf("%d ", A[i]);
+    for (int i = 0; i < n; i++)
+        printf("%d ", A[i]);
 
     printf("\n");
 

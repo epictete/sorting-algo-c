@@ -28,7 +28,8 @@ int main(void)
 
     BubbleSort(A, n);
 
-    for (int i = 0; i < n; i++) printf("%d ", A[i]);
+    for (int i = 0; i < n; i++)
+        printf("%d ", A[i]);
 
     printf("\n");
 
